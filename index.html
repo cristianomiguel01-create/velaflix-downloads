@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velaflix — instalar e atualizar</title>
+<link rel="icon" href="icone.png">
+<style>
+  :root { --fundo: #070D1A; --painel: #111C34; --linha: #1E2C4C; --texto: #EAF0FA; --suave: #9AAACA; --azul: #3B7BFF; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.5; }
+  main { max-width: 980px; margin: 0 auto; padding: 40px 24px 64px; }
+  header { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .logo { width: 64px; height: 64px; border-radius: 18px; background: var(--azul); display: flex; align-items: center; justify-content: center; font-size: 34px; font-weight: 700; flex: none; }
+  h1 { font-size: 40px; margin: 0; line-height: 1.1; }
+  .versao { color: var(--suave); font-size: 17px; margin: 4px 0 0; }
+  .destaque { margin: 32px 0; padding: 28px; border-radius: 20px; background: var(--painel); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+  .destaque p { margin: 0; color: var(--suave); font-size: 17px; }
+  .destaque strong { color: var(--texto); font-size: 22px; display: block; }
+  a.botao { display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 14px; background: #FFFFFF; color: var(--fundo); font-size: 22px; font-weight: 700; text-decoration: none; outline: 4px solid transparent; outline-offset: 3px; transition: transform .15s; }
+  a.botao:focus-visible, a.botao:hover { outline-color: var(--azul); transform: scale(1.04); }
+  .grelha { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  section.cartao { padding: 24px; border-radius: 18px; background: var(--painel); }
+  h2 { font-size: 22px; margin: 0 0 12px; }
+  ol { margin: 0; padding-left: 22px; color: var(--suave); font-size: 16px; }
+  ol li { margin-bottom: 8px; } ol strong, ol code { color: var(--texto); }
+  code { background: var(--fundo); padding: 3px 8px; border-radius: 6px; font-size: 15px; word-break: break-all; }
+  .titulo-seccao { margin: 40px 0 14px; }
+  ul.novidades { list-style: none; margin: 0; padding: 0; }
+  ul.novidades li { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--linha); font-size: 16px; }
+  ul.novidades time { color: var(--suave); flex: none; width: 110px; }
+  details { padding: 16px 0; border-bottom: 1px solid var(--linha); }
+  summary { cursor: pointer; font-size: 17px; font-weight: 600; }
+  details p { color: var(--suave); margin: 10px 0 0; font-size: 16px; }
+  footer { margin-top: 40px; color: var(--suave); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="logo" src="icone.png" alt="" aria-hidden="true">
+    <div>
+      <h1>Velaflix</h1>
+      <p class="versao" id="versao">Leitor IPTV para Android TV, tablet e telemóvel</p>
+    </div>
+  </header>
+
+  <div class="destaque">
+    <div>
+      <strong>Versão mais recente</strong>
+      <p id="detalhe">Instala por cima da anterior: a conta e os favoritos ficam guardados.</p>
+    </div>
+    <div style="display:flex; gap:12px; flex-wrap:wrap">
+      <a class="botao" id="dl-android" href="ecra.apk" download="velaflix.apk" autofocus>↓ Android (APK)</a>
+      <a class="botao" id="dl-windows" href="https://github.com/cristianomiguel01-create/velaflix-downloads/releases/tag/windows" style="background:#1B2C52; color:#EAF0FA">↓ Windows</a>
+      <a class="botao" id="dl-pro" href="velaflix-pro.apk" download="velaflix-pro.apk" style="background:#0B1222; color:#EAF0FA; border:2px solid #2F5FD8">↓ Velaflix Pro (TV)</a>
+    </div>
+  </div>
+
+  <div class="grelha">
+    <section class="cartao">
+      <h2>Na TV</h2>
+      <ol>
+        <li>Na Play Store da TV, instala a app <strong>Downloader</strong>.</li>
+        <li>Abre-a e escreve <code>cristianomiguel01-create.github.io/velaflix-downloads/ecra.apk</code></li>
+        <li>Quando pedir, autoriza o Downloader a <strong>instalar apps desconhecidas</strong>.</li>
+        <li>Carrega em <strong>Instalar</strong>.</li>
+      </ol>
+    </section>
+    <section class="cartao">
+      <h2>No telemóvel ou tablet</h2>
+      <ol>
+        <li>Abre esta página no <strong>Chrome</strong>.</li>
+        <li>Carrega em <strong>Descarregar APK</strong>.</li>
+        <li>Abre o ficheiro descarregado e autoriza o Chrome a <strong>instalar apps desconhecidas</strong>.</li>
+        <li>Carrega em <strong>Instalar</strong>.</li>
+      </ol>
+    </section>
+  </div>
+
+  <section class="cartao" id="velaflix-pro" style="margin-top:20px">
+    <h2>Velaflix Pro (só Android TV)</h2>
+    <ol>
+      <li>Versão alternativa para a TV, com dois motores de vídeo, guia com catch-up, perfis e gravações.</li>
+      <li>No Downloader escreve <code>cristianomiguel01-create.github.io/velaflix-downloads/velaflix-pro.apk</code> e instala. Fica ao lado da Velaflix normal.</li>
+      <li>Na primeira vez escolhe <strong>Português (Portugal)</strong> e entra com os mesmos dados (servidor, utilizador e palavra-passe).</li>
+      <li>Baseada no <a href="https://github.com/ahXN00/OwnTV" style="color:#8FB6FF">OwnTV</a> (código aberto, GPLv3); o código desta versão está disponível a pedido.</li>
+    </ol>
+  </section>
+
+  <section class="cartao" style="margin-top:20px">
+    <h2>No computador (Windows)</h2>
+    <ol>
+      <li>Carrega em <strong>↓ Windows</strong> e abre o ficheiro <code>velaflix-setup.exe</code>.</li>
+      <li>Se aparecer o aviso azul do Windows, carrega em <strong>Mais informações</strong> e depois em <strong>Executar mesmo assim</strong> (o programa não é assinado, por isso o Windows avisa).</li>
+      <li>A Velaflix abre sozinha e fica no menu Iniciar. As atualizações instalam-se sozinhas.</li>
+      <li>No programa: <strong>F11</strong> põe em ecrã inteiro, <strong>Esc</strong> volta atrás, <strong>espaço</strong> pausa e as setas avançam ou mudam de canal.</li>
+    </ol>
+  </section>
+
+  <h2 class="titulo-seccao">Novidades</h2>
+  <ul class="novidades" id="novidades"><li>A carregar…</li></ul>
+
+  <h2 class="titulo-seccao">Se alguma coisa correr mal</h2>
+  <details>
+    <summary>Aparece “App não instalada”</summary>
+    <p>Desinstala a versão que tens e instala outra vez. Vais ter de voltar a entrar na conta e os favoritos perdem-se.</p>
+  </details>
+  <details>
+    <summary>A instalação está bloqueada</summary>
+    <p>Nas definições do aparelho, procura “Instalar apps desconhecidas” e autoriza a app que estás a usar para instalar (Downloader na TV, Chrome no telemóvel).</p>
+  </details>
+  <details>
+    <summary>Como sei se tenho a versão mais recente?</summary>
+    <p>Compara a data no topo desta página com a última vez que instalaste. Se esta for mais recente, descarrega e instala por cima.</p>
+  </details>
+
+  <footer>Velaflix · uso pessoal</footer>
+</main>
+<script>
+  const MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+  const data = (iso, comHora) => {
+    const d = new Date(iso);
+    const base = `${d.getDate()} ${MESES[d.getMonth()]} ${d.getFullYear()}`;
+    return comHora ? `${base}, ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}` : base;
+  };
+  fetch('versao.json', { cache: 'no-store' })
+    .then((r) => r.json())
+    .then((v) => {
+      // o ficheiro descarregado leva a versão no nome (ajuda a saber que versão se tem)
+      document.getElementById('dl-android').download = `velaflix-${v.versao}.apk`;
+      document.getElementById('dl-android').textContent = `↓ Android (APK) · v${v.versao}`;
+      document.getElementById('versao').textContent = `Versão ${v.versao} · atualizada a ${data(v.data, true)}`;
+      document.getElementById('detalhe').textContent = `${v.tamanhoMB} MB · instala por cima da anterior: a conta e os favoritos ficam guardados.`;
+      const lista = document.getElementById('novidades');
+      lista.textContent = '';
+      for (const n of v.novidades) {
+        const li = document.createElement('li');
+        const t = document.createElement('time');
+        t.dateTime = n.data;
+        t.textContent = data(n.data);
+        const s = document.createElement('span');
+        s.textContent = n.texto;
+        li.append(t, s);
+        lista.append(li);
+      }
+    })
+    .catch(() => { document.getElementById('novidades').innerHTML = '<li>Sem informação de versões.</li>'; });
+</script>
+<script>
+  // Windows: instalador com a versão no nome, nas Releases do GitHub
+  fetch('windows/versao.json', { cache: 'no-store' }).then((r) => r.json()).then((w) => {
+    const a = document.getElementById('dl-windows');
+    a.href = 'https://github.com/cristianomiguel01-create/velaflix-downloads/releases/download/windows/' + w.ficheiro;
+    a.textContent = '↓ Windows · v' + w.versao;
+  }).catch(() => {});
+  // Velaflix Pro: nome com a versão
+  fetch('versao-pro.json', { cache: 'no-store' }).then((r) => r.json()).then((p) => {
+    const a = document.getElementById('dl-pro');
+    a.download = 'velaflix-pro-1.0.' + p.versao + '.apk';
+    a.textContent = '↓ Velaflix Pro (TV) · v1.0.' + p.versao;
+  }).catch(() => {});
+</script>
+</body>
+</html>

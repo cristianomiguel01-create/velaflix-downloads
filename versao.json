@@ -1,0 +1,55 @@
+{
+  "versao": 121,
+  "data": "2026-11-19T21:08:41.219Z",
+  "tamanhoMB": 44.2,
+  "novidades": [
+    {
+      "texto": "Temas: menus e painéis passam a ser o fundo escolhido um pouco mais claro (sem azul); zapping, pesquisa e guia seguem o tema",
+      "data": "2026-11-19T20:55:08Z"
+    },
+    {
+      "texto": "Temas: cor das bordas da seleção, ícone instalado a mudar com o tema (TV, tablet, telemóvel), entrada sem halo de cor; subscrição como texto no rodapé",
+      "data": "2026-11-19T20:44:49Z"
+    },
+    {
+      "texto": "Temas (Clássico, Meia-noite, Onda, Ecrã, Cinema) com fundo e cor dos títulos em ⚙ Definições; ícone, logótipo e entrada com brilho (halo e faixa de luz)",
+      "data": "2026-11-19T17:14:21Z"
+    },
+    {
+      "texto": "Transferências: descarregar filmes, episódios e temporadas para ver sem internet (telemóvel e tablet), com pausa, retoma e ecrã próprio",
+      "data": "2026-11-19T17:04:01Z"
+    },
+    {
+      "texto": "Velaflix: fundos em azul-marinho quase preto e logótipo do painel sobre grafite (como o ícone)",
+      "data": "2026-11-18T14:38:08Z"
+    },
+    {
+      "texto": "Velaflix Pro 1.0.34 [só android]",
+      "data": "2026-11-18T14:23:48Z"
+    },
+    {
+      "texto": "Direto: lista de categorias com altura limitada ao ecrã (com flex ficava vazia)",
+      "data": "2026-11-18T14:22:15Z"
+    },
+    {
+      "texto": "Velaflix com o visual Cinema: logótipo, ícone, banner e entrada em dourado; pormenores dourados sobre o azul-marinho escuro",
+      "data": "2026-11-18T14:06:15Z"
+    },
+    {
+      "texto": "Direto: lista de categorias cabe no painel e desliza até à última (Polónia já não fica cortada)",
+      "data": "2026-11-18T14:01:58Z"
+    },
+    {
+      "texto": "Windows: Transmitir confirma se a TV começa a dar e explica onde falha (firewall, formato) [só windows]",
+      "data": "2026-11-17T09:26:38Z"
+    },
+    {
+      "texto": "Windows: instalador com a versão no nome e que instala por cima se o desinstalador antigo for bloqueado (Controlo Inteligente de Aplicações); página com versões nos downloads",
+      "data": "2026-11-17T08:54:57Z"
+    },
+    {
+      "texto": "Windows: Chromecast via intermediário no PC (CORS e listas HLS reescritas, segmentos MPEG-TS); Ver na TV e Transmitir só na barra do leitor",
+      "data": "2026-11-17T00:48:18Z"
+    }
+  ]
+}
